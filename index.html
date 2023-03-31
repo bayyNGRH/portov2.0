@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://api.fontshare.com/v2/css?f[]=general-sans@500,600,400,700&display=swap" rel="stylesheet">
+    <title>Dev Server</title>
+  </head>
+
+  <body>
+    <!-- start header section -->
+    <header class="header container">
+      <nav>
+        <ul class="header__menu">
+          <li>
+            <a class="header__link" href="#about">About</a></li>
+          <li>
+            <a class="header__link" href="#featured">Work</a></li>
+          <li>
+            <a class="header__link" href="#contact">Contact</a></li>
+          <li class="header__line"></li>
+          <li>
+            <button id="theme-toggle" class="header__sun">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z" />
+              </svg>
+            </button>
+          </li>
+          <li>
+            <a class="header__resume btn" href="#">Resume</a>
+          </li>
+        </ul>
+        <button class="header__bars">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path fill-rule="evenodd" d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z" clip-rule="evenodd" />
+          </svg>          
+        </button>
+      </nav>
+    </header>
+    <!-- end header section -->
+
+    <!-- start mobile-nav section -->
+    <div class="mobile-nav">
+      <nav>
+        <ul class="mobile-nav__menu">
+          <li>
+            <a class="mobile-nav__link" href="#about">About</a>
+          </li>
+          <li>
+            <a class="mobile-nav__link" href="#featured">Work</a>
+          </li>
+          <li>
+            <a class="mobile-nav__link" href="#contact">Contacts</a>
+          </li>
+          <li class="mobile-nav__link-line"></li>
+          <li>
+            <button id="theme-toggle" class="mobile-nav__sun">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z" />
+              </svg>
+            </button>
+          </li>
+          <li>
+            <a class="mobile-nav__btn btn" href="#">Resume</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- end mobile-nav section -->
+
+    <main>
+      <section class="hero container">
+        <img class="hero__img" src="/IMG_1236.JPG" alt="Profile Picture">
+        <h2 class="hero__subtitle">Hi, I'm Bayu 👨🏻‍💻</h2>
+        <h1 class="hero__title">FRONT-END <br> WEB DEVELOPER.</h1>
+        <p class="hero__description">
+          A passionate <strong>Frontend / Fullstack-Jamstack</strong> web developer and 
+          <strong>UI/UX</strong> enthusiast specialized in building stunning 
+          pixel-perfect interactive website/applications.
+        </p>
+        <a class="hero__btn btn" href="#">Reach Out</a>
+      </section>
+      <section id="about" class="about container section">
+        <div class="about__content">
+          <h2 class="about__title">About</h2>
+          <p class="about_description">Hello there! I'm Bayu, a <strong>Frontend / Fullstack-Jamstack</strong> web developer based in Bali, Indonesia. I wake up in the morning, grab a cup of timmies coffee, open up my laptop and build things that live on the web all day, everyday.</p>
+          <p class="about_description">People who know me say I'm obsessed, that's fair, I am very driven and love learning new things.</p>
+          <p class="about_description">I recently attended a CS50 course from <a>Harvard edX.</a> I'm hoping to finish the course and gain a better understanding of the fundamentals of computer science.</p>
+          <hr class="about__hr" />
+          <h3 class="about__subtitle">Technologies</h3>
+          <div class="about__ul-container">
+            <ul class="about__ul">
+              <li class="about__list">Javascript (ES6+)</li>
+              <li class="about__list">CSS</li>
+              <li class="about__list">HTML</li>
+            </ul>
+            <ul class="about__ul">
+              <li class="about__list">ReactJS</li>
+              <li class="about__list">NextJS</li>
+              <li class="about__list">TailwindCSS</li>
+            </ul>
+          </div>
+        </div>
+        <div class="about__img-wrapper">
+          <img class="about__img lazy loading" src="https://via.placeholder.com/960" data-src="/about.jpg" alt="Profile picture">
+        </div>
+      </section>
+      <section id="featured" class="featured container section">
+        <h3 class="featured__subtitle">Featured Project</h3>
+        <div class="featured__wrapper">
+          <h2 class="featured__title">Better Days Tattoo</h2>
+          <a class="featured__link" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244" />
+            </svg>          
+          </a>
+        </div>
+        <p class="featured__description">
+          Quisquam enim consequatur inventore ut molestiae eveniet temporibus quisquam. Voluptatem cumque adipisci et sit natus sed. 
+          Quidem vel atque similique id itaque et quos ut eius. Iste tempora facilis sed veritatis. 
+          Accusantium pariatur incidunt facere necessitatibus.
+        </p>
+        <div class="featured__info-container">
+          <div>
+            <h3 class="featured__label">Tech Stack</h3>
+            <ul class="featured__tech-stack">
+              <li class="featured__info">TailwindCSS</li>
+              <li class="featured__info">ReactJS</li>
+              <li class="featured__info">React-hook-form</li>
+              <li class="featured__info">NextJS</li>
+              <li class="featured__info">Axios</li>
+              <li class="featured__info">Supabase</li>
+              <li class="featured__info">Stripe</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="featured__label">Project Type</h3>
+            <p class="featured__info">Fullstack-Jamstack</p>
+          </div>
+          <div>
+            <h3 class="featured__label">Timeline</h3>
+            <p class="featured__info">January 2023 - present</p>
+          </div>
+        </div>
+        <div class="featured__img-container">
+          <div class="featured__img-wrapper">
+            <img class="lazy loading" src="https://via.placeholder.com/900" data-src="/hero.png" alt="Better Days Tattoo Website">
+          </div>
+          <div class="featured__img-wrapper">
+            <img class="lazy loading" src="https://via.placeholder.com/900" data-src="/story.png" alt="Better Days Tattoo Website">
+          </div>
+          <div class="featured__img-wrapper">
+            <img class="lazy loading" src="https://via.placeholder.com/900" data-src="/gallery.png" alt="Better Days Tattoo Website">
+          </div>
+          <div class="featured__img-wrapper">
+            <img class="lazy loading" src="https://via.placeholder.com/900" data-src="/quote.png" alt="Better Days Tattoo Website">
+          </div>
+          <div class="featured__img-wrapper">
+            <img class="lazy loading" src="https://via.placeholder.com/900" data-src="/form.png" alt="Better Days Tattoo Website">
+          </div>
+          <div class="featured__img-wrapper">
+            <img class="lazy loading" src="https://via.placeholder.com/900" data-src="/footer.png" alt="Better Days Tattoo Website">
+          </div>
+        </div>
+      </section>
+      <section class="work container section">
+        <h2 class="work__title">Past Projects</h2>
+        <p class="work__description">
+          Fuga qui vel amet quae consequatur architecto veniam.
+          Fuga qui vel amet quae consequatur architecto veniam.
+          Fuga qui vel amet quae consequatur architecto veniam.
+        </p>
+        <div class="work__container">
+          <!-- Project 1 -->
+          <h3 class="work__project-title">SignUp Page</h3>
+          <div class="work__img-wrapper work__image1">
+            <img
+              class="lazy loading"
+              src="https://via.placeholder.com/900"
+              data-src="/signup.png"
+              alt="SingUp Page"
+            />
+          </div>
+          <div class="work__project work__content1">
+            <h3 class="work__project-subtitle">SignUp Page</h3>
+            <p class="work__project-description1">
+              Labore magna ut non labore Lorem nisi culpa sint et quis sint.
+              Enim pariatur deserunt do ad exercitation.
+            </p>
+            <p class="work__project-description2">
+              Ea ut non cupidatat consequat sint elit ipsum culpa dolor cillum
+              commodo. Do esse excepteur cillum deserunt duis incididunt. Eu
+              tempor ullamco aliqua consectetur incididunt anim dolor sunt
+              laboris adipisicing cupidatat sint.
+            </p>
+            <a class="btn work__project-btn" href="#">Website</a>
+          </div>
+          <!-- Project 2 -->
+          <h3 class="work__project-title">Paon Jineng</h3>
+          <div class="work__img-wrapper work__image2">
+            <img
+              class="lazy loading"
+              src="https://via.placeholder.com/900"
+              data-src="/paonJineng.png"
+              alt="Paon Jineng Page"
+            />
+          </div>
+          <div class="work__project work__content2">
+            <h3 class="work__project-subtitle">Paon Jineng</h3>
+            <p class="work__project-description1">
+              Sunt sint labore officia irure. Dolore pariatur nisi deserunt sunt
+              exercitation excepteur do reprehenderit fugiat Lorem sint ut.
+            </p>
+            <p class="work__project-description2">
+              Mollit ipsum mollit magna occaecat eiusmod sint fugiat est non
+              adipisicing esse fugiat deserunt minim. Enim occaecat velit eu non
+              amet nostrud officia duis.
+            </p>
+            <a class="btn work__project-btn" href="#">Website</a>
+          </div>
+          <!-- Project 3 -->
+          <h3 class="work__project-title">Suit Jawa</h3>
+          <div class="work__img-wrapper work__image3">
+            <img
+              class="lazy loading"
+              src="https://via.placeholder.com/900"
+              data-src="/suitJawo.png"
+              alt="Suit Jawa Javascript"
+            />
+          </div>
+          <div class="work__project work__content3">
+            <h3 class="work__project-subtitle">Suit Jawa</h3>
+            <p class="work__project-description1">
+              Aliquip eu ad est reprehenderit veniam irure exercitation in velit
+              enim ipsum.
+            </p>
+            <p class="work__project-description2">
+              Elit est amet quis incididunt officia velit eiusmod do amet. Sint
+              non qui nulla sit ex cillum non pariatur velit proident ut aliqua
+              fugiat incididunt id minim.
+            </p>
+            <a class="btn work__project-btn" href="#">Website</a>
+          </div>
+      </section>
+      <section id="contact" class="contact container section">
+        <h2 class="contact__title">Get In Contact!</h2>
+        <p class="contact__description">
+          Whether you are starting a project, have business inquiries
+          or just want to say hi, my inbox is always open so feel free 
+          to reach out and I will get back to you as soon as possible.
+        </p>
+        <a 
+        class="contact__btn btn" 
+        href="mailto:r.bayunugraha.s@gmail.com"
+        target="_blank"
+        >Reach Out</a
+        >
+      </section>
+    </main>
+
+    <footer class="footer container section">
+      <h3 class="footer__title">--bayyNGRH--</h3>
+    </footer>
+
+    <script type="module" src="./src/main.js"></script>
+  </body>
+
+</html>
