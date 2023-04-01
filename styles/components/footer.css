@@ -1,4 +1,8 @@
-.footer__title {
+.footer {
+    width: 100%;
+}
+
+/* .footer__title {
     font-size: var(--size-s);
     font-weight: 400;
     color: var(--clr-slate600);
@@ -6,4 +10,23 @@
     text-transform: none;
     letter-spacing: 0.2em;
     user-select: none;
+} */
+
+.footer-parent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--clr-slate400);
+}
+
+.footer-child {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-child2 {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
 }

@@ -46,7 +46,9 @@ html {
 }
 
 body {
-  font-family: 'General Sans', sans-serif;
+  font-family: 'Fira Sans', sans-serif;
+  font-family: 'Gloock', serif;
+  font-family: 'Rubik', sans-serif;
   background-color: var(--clr-dark);
   color: var(--clr-light);
 }
